@@ -1,0 +1,14 @@
+PODS:
+  - tryPod (0.1.0)
+
+DEPENDENCIES:
+  - tryPod (from `../`)
+
+EXTERNAL SOURCES:
+  tryPod:
+    :path: ../
+
+SPEC CHECKSUMS:
+  tryPod: ddf5786deff81e4b5d7e05c957630972ed994578
+
+COCOAPODS: 0.39.0

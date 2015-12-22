@@ -11,7 +11,12 @@
 @implementation CalculatorClass
 -(NSNumber *)calculateInterest:(NSNumber *)principalAmount :(NSNumber *)time :(NSNumber *)rateOfInterest
 {
-    _interest=principalAmount*time*rateOfInterest/100;
+    int p,t,r,i;
+    p=[principalAmount intValue];
+    t=[time intValue];
+    r=[rateOfInterest intValue];
+    i=p*t*r/100;
+    _interest=[NSNumber numberWithInt:i];
     return _interest;
 }
 @end
