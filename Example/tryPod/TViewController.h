@@ -7,10 +7,12 @@
 //
 
 @import UIKit;
+#import <CalculatorClass.h>
 @interface TViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *amount;
-@property (weak, nonatomic) IBOutlet UILabel *time;
-@property (weak, nonatomic) IBOutlet UILabel *rate;
+@property (weak, nonatomic) IBOutlet UITextField *amount;
+@property (weak, nonatomic) IBOutlet UITextField *time;
+@property (weak, nonatomic) IBOutlet UITextField *rate;
+
 @property (weak, nonatomic) IBOutlet UILabel *interest;
 - (IBAction)calculateClicked:(id)sender;
 

@@ -9,7 +9,7 @@
     "jeevan": "jeevaneashwar2@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/tryPod.git",
+    "git": "https://github.com/ejeevan/tryPod.git",
     "tag": "0.1.0"
   },
   "platforms": {

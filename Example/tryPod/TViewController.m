@@ -9,7 +9,9 @@
 #import "TViewController.h"
 
 @interface TViewController ()
-
+{
+    CalculatorClass *calculatorObject;
+}
 @end
 
 @implementation TViewController
@@ -27,5 +29,12 @@
 }
 
 - (IBAction)calculateClicked:(id)sender {
+    NSNumber *pAmount,*time,*rate,*interest;
+    pAmount =[NSNumber numberWithInt:[_amount.text intValue]];
+    time =[NSNumber numberWithInt:[_time.text intValue]];
+    rate =[NSNumber numberWithInt:[_rate.text intValue]];
+    calculatorObject=[[CalculatorClass alloc]init];
+    interest=[calculatorObject calculateInterest:pAmount :time :rate];
+    _interest.text=[NSString stringWithFormat:@"Rs.%@",interest];
 }
 @end
