@@ -20,12 +20,21 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    _amount.delegate=self;
+    _time.delegate=self;
+    _rate.delegate=self;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(BOOL) textFieldShouldReturn: (UITextField *) textField
+{
+    [textField resignFirstResponder];
+    
+    return YES;
 }
 
 - (IBAction)calculateClicked:(id)sender {

@@ -8,7 +8,7 @@
 
 @import UIKit;
 #import <CalculatorClass.h>
-@interface TViewController : UIViewController
+@interface TViewController : UIViewController<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *amount;
 @property (weak, nonatomic) IBOutlet UITextField *time;
 @property (weak, nonatomic) IBOutlet UITextField *rate;
